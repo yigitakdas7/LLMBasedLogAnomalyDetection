@@ -15,7 +15,7 @@ cd LLMBasedLogAnomalyDetection
 Gerekli Python kütüphanelerini yükleyin:
 pip install -r requirements.txt
 
-LLM Apı Key'i alın. Kod dosyaları üzerinden gerekli yerlere ekleyin.
+LLM Api Key'i alın. Kod dosyaları üzerinden gerekli yerlere ekleyin.
 
 Projeyi başlatın:
 
