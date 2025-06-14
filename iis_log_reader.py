@@ -4,8 +4,8 @@ import requests
 import json
 import os
 
-API_KEY = "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"
-BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+API_KEY = "API KEY giriniz"
+BASE_URL = "API KEY"
 
 def read_logs(path):
     try:
