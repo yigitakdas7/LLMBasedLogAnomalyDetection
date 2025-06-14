@@ -15,6 +15,8 @@ cd LLMBasedLogAnomalyDetection
 Gerekli Python kütüphanelerini yükleyin:
 pip install -r requirements.txt
 
+LLM Apı Key'i alın.
+
 Projeyi başlatın:
 
 streamlit run app.py
