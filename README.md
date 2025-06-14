@@ -21,7 +21,7 @@ Projeyi başlatın:
 
 streamlit run app.py
 Log dosyasını yükleyin:
-Açılan arayüzde, .txt formatındaki Windows güvenlik log dosyanızı yükleyin ve analiz başlasın!
+Açılan arayüzde, .txt formatındaki Güvenlik log dosyanızı yükleyin ve analiz başlasın!
 
 🔍 Uygulama Size Neler Sunuyor?
 Yapay zekâ modelimiz logları analiz ederek aşağıdaki bilgileri çıkartır:
