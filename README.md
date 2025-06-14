@@ -9,6 +9,7 @@ Projeye başlamak için aşağıdaki adımları takip edebilirsiniz:
 
 Projeyi klonlayın:
 git clone https://github.com/yigitakdas7/LLMBasedLogAnomalyDetection.git
+
 cd LLMBasedLogAnomalyDetection
 
 Gerekli Python kütüphanelerini yükleyin:
