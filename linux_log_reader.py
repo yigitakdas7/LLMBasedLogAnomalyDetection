@@ -40,7 +40,7 @@ def extract_json_objects(text):
 def analyze_logs_with_gpt_separately(logs, max_retries=3):
     all_results = []
 
-    for i, log in enumerate(logs[:6]):  # İlk 6 logu analiz et
+    for i, log in enumerate(logs[:6]):  
         prompt = (
             "Aşağıda Linux sisteminden alınan tek bir log kaydı var. "
             "Bu logu şüpheli aktiviteler açısından analiz et ve JSON formatında aşağıdaki bilgileri ver:\n"
