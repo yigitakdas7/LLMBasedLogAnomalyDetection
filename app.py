@@ -18,7 +18,7 @@ def show_results(result):
     if isinstance(result, list) and all(isinstance(i, dict) for i in result):
         st.subheader("Tablo Görünümü")
 
-        # Sadece attack_type ve risk_level alanlarını al
+     
         table_data = [
             {
                 "attack_type": entry.get("attack_type", "Bilinmiyor"),
@@ -39,7 +39,7 @@ def show_results(result):
                     "Düşük": "🟢 **Düşük**"
                 }.get(risk, f"**{risk}**")
                 st.markdown(f"**Risk Seviyesi:** {color_risk}")
-                st.markdown(f"**Çözüm Önerisi:** {entry.get('solution', 'Yok')}")  # detaylar burada
+                st.markdown(f"**Çözüm Önerisi:** {entry.get('solution', 'Yok')}") 
                 st.markdown(f"**Detaylar:**\n\n{entry.get('details', 'Detay yok')}")
     else:
         st.json(result)
@@ -47,7 +47,7 @@ def show_results(result):
 
 tab1, tab2, tab3, tab4 = st.tabs(["🐧 Linux Logları", "🧧 Network Anomaly Logları", "🪟 Windows Güvenlik Logları","🌐 IIS Logları"])
 
-# --- Linux Logs Tab ---
+
 with tab1:
     st.header("Linux Log Analizi")
     uploaded_file = st.file_uploader("Linux log dosyasını yükleyin (.txt)", type=["txt"], key="linux")
@@ -60,7 +60,7 @@ with tab1:
         st.success("✅ Analiz tamamlandı.")
         show_results(result)
 
-# --- Network Anomaly Tab ---
+
 with tab2:
     st.header("Network Anomaly Log Analizi")
     uploaded_file = st.file_uploader("Network Anomaly log dosyasını yükleyin (.txt)", type=["txt"], key="mac")
@@ -73,7 +73,6 @@ with tab2:
         st.success("✅ Analiz tamamlandı.")
         show_results(result)
 
-# --- Windows Security Logs Tab ---
 with tab3:
     st.header("Windows Güvenlik Log Analizi")
     uploaded_file = st.file_uploader("Windows güvenlik log dosyasını yükleyin (.txt)", type=["txt"], key="windows")
